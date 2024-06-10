@@ -1,0 +1,223 @@
+.red {
+    background: whitesmoke;
+}
+
+.resume {
+    text-shadow: 2px 0px 0px rgb(54, 62, 173);
+}
+
+.header {
+    color: white;
+}
+
+.footer{
+    position:relative;
+}
+
+#cv-form{
+    display: none;  
+}
+
+/* Resume Desing CSS */
+
+.Resume_Design{
+    border:1px solid black;
+    width:100%;
+    margin:auto;
+    margin-top: 100px;
+}
+
+.left_Section{
+    background-color: rgb(4, 3, 72);
+}
+
+.right_Section{
+    background-color: white;
+}
+
+/* styling for left section */
+
+.personal_info{
+    margin-top: 10vh;
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:50px;
+    border-bottom:2px solid rgb(46, 13, 154);
+}
+
+#myimg{
+    position:relative;
+    width:250px;
+    height:250px;
+    border-radius:125px;
+}
+
+#c_Name{
+    color:white;
+    margin-top:15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#c_profile{
+    font-size: 20px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.contact_details{
+    margin-top:30px;
+    margin-left:10px;
+    color:white;
+    font-size: 17px;
+    padding-bottom:45px;
+    border-bottom:2px solid rgb(46, 13, 154);
+}
+
+.details{
+    margin-top:20px;
+}
+
+.r_skills{
+    margin-top:30px;
+    margin-left:10px;
+    color:white;
+    font-size: 17px;
+    padding-bottom:20px;
+    border-bottom:2px solid rgb(46, 13, 154);
+}
+
+.r_skills ul li{
+    list-style: circle;
+}
+
+.hobbies{
+    margin-top:30px;
+    margin-left:10px;
+    color:white;
+    font-size: 17px;
+    padding-bottom:20px;
+    border-bottom:2px solid rgb(46, 13, 154);
+}
+
+.hobbies ul li {
+    /* display: inline-block; */
+    list-style:circle;
+}
+
+.language{
+    margin-top:30px;
+    margin-left:10px;
+    color:white;
+    font-size: 17px;
+    padding-bottom:20px;
+}
+
+.language ul li {
+    /* display: inline-block; */
+    list-style:circle;
+}
+
+.title{
+    font-size: 17px;
+    color:white;
+}
+
+/* styling for right section */
+
+#c_objective{
+    margin:7px 0px;
+    height:max-content;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+#objtitle{
+    margin-top: 20px;
+    margin-left:20px;
+}
+
+#obj_line{
+    width:90%;
+    margin-right:10px;
+    margin-left: 20px;
+    color: rgb(35, 29, 147);
+    border-width: 2px;
+}
+
+.c_experience{
+        margin:0 18px;
+        height:max-content;
+        font-size: 16px;
+        padding-bottom:20px;
+}
+
+.c_experience ul li{
+    list-style: none;
+}
+
+.c_certification {
+    margin:0 18px;
+    height:max-content;
+    font-size: 16px;
+    padding-bottom:20px;
+}
+
+.c_certification ul li{
+    list-style: none;
+}
+
+
+.c_Education {
+    margin:0 18px;
+    height:max-content;
+    font-size: 16px;
+    padding-bottom:20px;
+}
+
+.c_Education ul li{
+    list-style: none;
+}
+
+.c_refrence {
+    margin:0 18px;
+    height:max-content;
+    font-size: 16px;
+    padding-bottom:20px;
+}
+
+.c_refrence ul li{
+    list-style: none;
+}
+
+.title2{
+    font-size: 23px;
+    margin-left:10px;
+    margin-bottom:-10px;
+}
+
+
+
+
+
+@media (min-width:760px) and (max-width:992px)
+{
+    .contact_details{
+        font-size:13px;
+    }
+
+    .c_objective{
+        font-size: 13px;
+    }
+
+    #myimg{
+        width:200px;
+        height:200px;
+        border-radius: 100px;
+    }
+}
