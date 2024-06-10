@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 30);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+nav {
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background: rgb(0, 0, 81);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(100, 100, 234);
+    font-size: 1.03rem;
+}
+
+nav .left {
+    font-size: 1.75rem;
+}
+
+.purple {
+    color: blueviolet;
+}
+
+.gray {
+    color: grey;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 85px 0px;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.firstSection .left {
+    font-size: 2.5rem;
+}
+
+.firstSection .left .btn {
+    background-color: rgb(30, 30, 124);
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.firstSection .right img {
+    width: 80%;
+}
+
+#element {
+    color: rgb(117, 117, 219);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgb(127, 157, 246);
+    margin: 40px 90px;
+
+}
+
+.secondSection {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondSection>div {
+    width: 35%;
+    margin: 23px;
+}
+
+.Education div {
+    margin: 7px 0;
+    padding: 10px;
+    border: 3px solid rgb(56, 56, 166);
+    border-radius: 7px;
+}
+
+.currentdetails {
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.details {
+    font-size: 14px;
+    font-weight: bold;
+    /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.thirdSection {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.thirdSection>div {
+    width: 35%;
+    margin: 23px;
+}
+
+.skills .codingSkill {
+    margin: 7px 0;
+    border: 3px solid rgb(56, 56, 166);
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.skillHeading {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box {
+    border: 2px solid rgb(50, 129, 240);
+    height: 10px;
+    border-radius: 5px;
+    margin: 3px 0;
+    width: 80%;
+}
+
+.skill_level1 {
+    height: 10px;
+    background-color: blueviolet;
+    border-radius: 4px;
+    width: 90%;
+}
+
+.skill_level2 {
+    height: 10px;
+    background-color: blueviolet;
+    border-radius: 4px;
+    width: 80%;
+}
+
+.skill_level3 {
+    height: 10px;
+    background-color: blueviolet;
+    border-radius: 4px;
+    width: 70%;
+}
+
+.skill_level4 {
+    height: 10px;
+    background-color: blueviolet;
+    border-radius: 4px;
+    width: 85%;
+}
+
+.skill_level5 {
+    height: 10px;
+    background-color: blueviolet;
+    border-radius: 4px;
+    width: 85%;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.footer {
+    border-top: 2.5px solid rgb(156, 55, 238);
+    height: 35vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(8, 9, 53);
+}
+
+.footer>div {
+    width: 35%;
+}
+
+.leftfooter {
+    align-items: center;
+}
+
+.rightfooter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contactinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24%;
+    height: 110px;
+    background-color: rgb(27, 23, 130);
+    box-shadow: 4px 4px 25px rgb(57, 57, 135);
+    border-radius: 12px;
+    margin: 0 20px;
+}
+
+.iconsection {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contactreview {
+    font-size: 12px;
+}
+
+.Arial {
+    font-family: 'Playfair Display', serif;
+    ;
+    font-size: 2.5rem;
+}
+
+.icons {
+    margin: 13px 7px;
+}
+
+
+/* Section allocated to make website responsive */
+
+@media (min-width:500px) and (max-width:850px) {
+    nav {
+        height: 100px;
+        width: 850px;
+        flex-direction: column;
+    }
+
+    .firstSection {
+        justify-content: space-around;
+        width: 850px;
+    }
+
+    .firstSection .left {
+        font-size: 2rem;
+    }
+
+    .firstSection .left .btn {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    hr {
+        margin: 20px 50px;
+        width: 750px;
+    }
+
+    .center {
+        width: 850px;
+    }
+
+    .secondSection {
+        width: 850px;
+    }
+
+    .thirdSection {
+        width: 850px;
+    }
+
+    .footer {
+        width: 850px;
+        height: 220px;
+    }
+
+}
+
+@media (max-width:500px) {
+    nav {
+        height: 100px;
+        width: 650px;
+        flex-direction: column;
+    }
+
+    .firstSection {
+        justify-content: space-evenly;
+        width: 650px;
+        flex-direction: column-reverse;
+    }
+
+    .firstSection div {
+        width: 300px;
+    }
+
+    .firstSection .left {
+        margin-top: 43px;
+        font-size: 2.02rem;
+    }
+
+    .firstSection .left .btn {
+        padding: 5px;
+        margin: 0 2px;
+        font-size: 10px;
+    }
+
+    hr {
+        margin: 20px 50px;
+        width: 500px;
+    }
+
+    .center {
+        width: 650px;
+        margin-top: 50px;
+    }
+
+    .secondSection {
+        flex-direction: column;
+        width: 650px;
+    }
+
+    .Education div {
+        width: 570px;
+    }
+
+    .thirdSection {
+        flex-direction: column;
+        width: 650px;
+    }
+
+    .box {
+        width: 550px;
+    }
+
+    .codingSkill {
+        width: 570px;
+    }
+
+    .footer {
+        width: 650px;
+    }
+
+    .contactinfo {
+        height: 70px;
+    }
+
+    .Arial {
+        font-size: 1.5rem;
+    }
+
+    .contactreview {
+        font-size: 10px;
+    }
+}
