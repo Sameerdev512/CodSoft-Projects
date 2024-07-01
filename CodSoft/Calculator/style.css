@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 5px 0;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: larger;
+}
