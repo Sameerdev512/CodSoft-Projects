@@ -1,12 +1,14 @@
 import React from "react";
 
-const CartItem = () => {
+const CartItem = ({details}) => {
+const rupeeSymbol = "\u20B9";
+
   return (
     <div>
-      <div className="CartItem-container">
-        <div className="item-image">
+      <div className="CartItem-container" >
+        <div className="item-image" style={{borderWidth:"0"}}>
           <img
-            src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={details.image}
             alt="1"
             style={{ width: "200px", height: "200px" }}
           />
@@ -14,11 +16,10 @@ const CartItem = () => {
         <div className="item-details">
           <div className="item-heading">
             <h5>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              debitis cumque quas ea quod ut reprehenderit iste inventore qui
-              sed, nobis rerum corporis maxime molestias nesciunt harum numquam
-              laborum aliquam tempore voluptates facilis consequatur!
+              {details.title.substr(0,40)}..
+              <br />
             </h5>
+            <h6 style={{fontFamily:"sans",fontWeight:"500",fontSize:"17px"}}>{details.desc.substr(0,120)}...</h6>
           </div>
           <div>In Stock</div>
           <div>Sold by MERCHANT NAME</div>
@@ -47,7 +48,9 @@ const CartItem = () => {
             </div>
           </div>
         </div>
-        <div className="item-price">25000.00</div>
+        <div className="item-price">
+          {rupeeSymbol}{details.price}
+        </div>
       </div>
       <hr style={{ height: "1px", width: "100%" }} />
     </div>
