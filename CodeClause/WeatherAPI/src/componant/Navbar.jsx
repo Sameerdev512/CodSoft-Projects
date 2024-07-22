@@ -4,10 +4,11 @@ import '../../src/scss/style.css'
 const Navbar = ({handleClick}) => {
 
   const [city,setCity]=useState("indore");
+
   const handleChange =(e)=>{
-   setCity(e.target.value);
-  //  e.preventDefault();
-  }
+      setCity(e.target.value);
+      //  e.preventDefault();
+    }
 
   return (
     <>
